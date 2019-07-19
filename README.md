@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-asioheaders
 ===================
 
@@ -18,8 +14,15 @@ Summary: 'Asio' is a cross-platform C++ library for network and low-level I/O pr
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-asioheaders-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-asioheaders-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6403&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-asioheaders-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
