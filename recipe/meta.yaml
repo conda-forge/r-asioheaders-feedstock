@@ -1,4 +1,4 @@
-{% set version = '1.12.1-1' %}
+{% set version = "1.12.2-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/AsioHeaders_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/AsioHeaders/AsioHeaders_{{ version }}.tar.gz
-  sha256: 5b4f6454f938c0d72b1969068461cd625d2d31a3ccb909ae9a53e52edd530c5e
+  sha256: 08220eac409d991614a80f8c8fdc1780c9596727c040be9f68a3602c2de26b45
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,12 +36,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=AsioHeaders
   license: BSL-1.0
-  summary: '''Asio'' is a cross-platform C++ library for network and low-level I/O programming
-    that provides developers with a consistent asynchronous model using a modern C++
-    approach. It is also included in Boost but requires linking when used with Boost.
-    Standalone it can be used header-only (provided a recent compiler). ''Asio'' is
-    written and maintained by Christopher M. Kohlhoff, and released under the ''Boost
-    Software License'', Version 1.0.'
+  summary: "'Asio' is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a\
+    \ modern C++ approach. It is also included in Boost but requires linking when used with Boost. Standalone it can be used header-only (provided a recent compiler).\
+    \ 'Asio' is written and maintained by Christopher M. Kohlhoff, and released under the 'Boost Software License', Version 1.0."
   license_family: OTHER
   license_file: LICENSE.txt
 
