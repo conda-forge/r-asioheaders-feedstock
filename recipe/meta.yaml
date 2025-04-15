@@ -1,4 +1,4 @@
-{% set version = "1.28.2-1" %}
+{% set version = "1.30.2-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/AsioHeaders_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/AsioHeaders/AsioHeaders_{{ version }}.tar.gz
-  sha256: a39bb16e4fb8a77f9f9e6f0683c74e8acf8f76a6e1e9e56db4e1a0700023b380
+  sha256: 1be43b48a4cc704ef84b5673b4fc78323709fd0d61c18dbd364ac89a38e2ab31
 
 build:
   number: 0
